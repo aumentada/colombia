@@ -1,0 +1,294 @@
+.App {
+  background-color: #9dc3fb;
+}
+
+body {
+  background-color: #9dc3fb;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Map-container {
+  background-color: #9dc3fb;
+}
+
+.Map {
+  width: 100vw;
+  margin: auto;
+}
+
+@media screen and (min-width: 100vh) {
+  .Map {
+    height: 100vh;
+    width: 69vh;
+  }
+}
+
+.Map-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Map-cta-button-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  gap: 1rem;
+}
+
+.Map-cta-toast {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5rem;
+
+  background-color: #C1E1C1;
+  animation: slidein 250ms ease-in-out;
+}
+
+.Map-padding {
+  background-color: #9dc3fb;
+  padding-top: 20px;
+  padding-bottom: 20;
+}
+
+.province-layer:hover {
+  cursor: pointer;
+}
+
+svg#svg574 .province-layer path {
+  -webkit-tap-highlight-color: transparent;
+}
+
+svg#svg574 .province-layer path:hover {
+  fill: #cccccc;
+}
+
+.level-menu {
+  background-color: white;
+  width: 200px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: black;
+  text-indent: 10px;
+  z-index: 1000;
+}
+
+.level-5:hover {
+  cursor: pointer;
+  background-color: #e84c3d;
+}
+
+.level-4:hover {
+  cursor: pointer;
+  background-color: #d58337;
+}
+
+.level-3:hover {
+  cursor: pointer;
+  background-color: #f3c218;
+}
+
+.level-2:hover {
+  cursor: pointer;
+  background-color: #30cc70;
+}
+
+.menu-header {
+  font-weight: bold;
+}
+
+.menu-header:hover {
+  cursor: pointer;
+}
+
+.menu-header,
+.level-5,
+.level-4,
+.level-3,
+.level-2,
+.level-1 {
+  display: flex;
+  min-height: 25px;
+  align-items: center;
+}
+
+.level-1:hover {
+  cursor: pointer;
+  background-color: #3598db;
+}
+
+.level-0 {
+  display: flex;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  min-height: 25px;
+  align-items: center;
+}
+
+.level-0:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.save-image-button, .reset-button, .share-fb-button {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  min-height: 30px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  padding: 3px;
+}
+
+.save-image-button:hover, .reset-button:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.reset-button:disabled {
+  cursor: not-allowed;
+}
+
+.share-fb-button {
+  color: white;
+  background: #4267b3;
+  margin-bottom: 20px;
+}
+
+.share-fb-button:hover {
+  cursor: pointer;
+  background-color: #2d487d;
+}
+
+.share-fb-button svg {
+  margin-right: 4px;
+}
+
+.about {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  height: 100h;
+}
+
+.nav {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+
+  padding-top: 10px;
+}
+
+.nav-ul {
+  padding-left: 20px;
+  padding-bottom: 0px;
+  margin-block: 16px;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.link {
+  color: blue;
+  display: inline;
+}
+
+.asterisk {
+  font-size: 12px;
+}
+
+.dp {
+  width: 100px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  float: left;
+  margin-right: 10px;
+}
+
+.flag-counter {
+  text-align: center;
+}
+
+.bullet {
+  list-style-type: circle;
+}
+
+.map-tooltip {
+  position: absolute;
+  background: #fff;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.5rem;
+  font-weight: 900;
+  font-size: 0.875rem;
+  pointer-events: none;
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+}
+
+.donate {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.donate-button {
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
