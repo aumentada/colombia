@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '.././App.css';
-import denz from '.././denz.jpg';
 
 const Home = () => {
 	return (
@@ -10,66 +9,45 @@ const Home = () => {
 			<h2>Mapa de viajes de Colombia</h2>
     		App para visualizar los lugares que has visitado en Colombia.
 			<br></br>
-			<br></br>
-
-    This project was inspired by the  <div className="link" onClick={() => window.open('https://zhung.com.tw/japanex/')}>Japan↗</div> version and was built using ReactJS. 
-    You can view the source code <div className="link" onClick={() => window.open('https://github.com/denzdelvillar/philippine-map-app')}>here↗</div>.
 
 			<h2>Como usar</h2>
+			El mapa está dividido en 32 departamentos de Colombia. Solo debes hacer click en un departamento y escoger el nivel de viaje correspondiente.
+			<br></br>
+			<br></br>
 
-	El mapa está dividido en 32 departamentos de Colombia. Solo debes hacer click en un departamento y escoger el nivel de viaje correspondiente.
+			Aquí está lo que representa cada nivel:
 
 			<br></br>
 			<br></br>
 
-
-    Here&apos;s what each level represents:
-			<br></br>
-			<br></br>
-			<li className="bullet"><b>Lived there</b> - you spent a significant portion of your life in that area.</li> 
-			<li className="bullet"><b>Stayed there</b> - you slept at least a night in that area.</li> 
-			<li className="bullet"><b>Visited there</b> - you spent some hours exploring the area.</li> 
-			<li className="bullet"><b>Alighted there</b> - you just dropped off for a short stopover, layover, or transfer.</li> 
-			<li className="bullet"><b>Passed there</b> - you passed by that area but did not set foot.</li> 
-			<li className="bullet"><b>Never been there</b> - you need to travel there soon.</li> 
+			<li className="bullet"><b>Viví ahí</b> - pasaste una parte significativa de tu vida en ese departamento.</li>
+			<li className="bullet"><b>Me quede ahí</b> - pasaste al menos una noche en ese departamento.</li>
+			<li className="bullet"><b>Visité ahí</b> - pasaste algunas horas explorando el departamento.</li>
+			<li className="bullet"><b>Aterrice ahí</b> - solo hiciste escala en ese departamento.</li>
+			<li className="bullet"><b>Pasé por ahí</b> - pasaste por ese departamento pero no te detuviste.</li>
+			<li className="bullet"><b>Nunca estuve ahí</b> - no has estado en ese departamento, deberías ir pronto.</li>
 
 			<br></br>
-
-
-    Your total score will be updated accordingly. You can then save the image and share on your social media.
+			Tu puntaje total se actualizará de acuerdo a tus respuestas. Puedes guardar la imagen y compartirla en tus redes sociales.
 
 			<br></br>
 			<br></br>
 
-
-    Click <Link className="link" to={'/map'}>here</Link> to view the map. Enjoy!
-
-			<br></br>
-			<br></br>
-			<section className="asterisk">*Technically, there are only 82 provinces. Metro Manila is an administrative region.</section>
+			Clic <Link className="link" to={'/map'}>aquí</Link> para ver el mapa. ¡Disfruta!
 
 
-			<h2>About Me</h2>
+			<h2>Acerca de</h2>
 
-			<img className="dp" src={denz} alt="me" />
-
-    Hello there! My name is Denz and I am a Filipino software engineer currently based in Singapore.
-			<br></br>
-			<br></br>
-
-    This is my first time dabbling with ReactJS, and I used chatGPT heavily to help me with this project. If you have any comments or if you want to contribute to this project, please do reach out! 
+			Este proyecto está basado en la versión de <div className="link" onClick={() => window.open('https://www.my-philippines-travel-level.com/')}>Filipinas↗</div>, que a su vez está basado en la versión de <div className="link" onClick={() => window.open('https://zhung.com.tw/japanex/')}>Japón↗</div> y fue construido usando ReactJS.
 
 			<br></br>
+
+			<div className="link" onClick={() => window.open('https://github.com/aumentada/colombia')}>Código fuente↗</div>.
+
 			<br></br>
 
-    Check out my socials: 
-			<br></br>
-			<div className="link" onClick={() => window.open('https://www.instagram.com/denzdelvillar')}>Instagram↗</div>
-			<br></br>
-			<div className="link" onClick={() => window.open('https://www.twitter.com/denzvryan')}>Twitter↗</div>
-			<br></br>
-			<div className="link" onClick={() => window.open('https://www.linkedin.com/in/denzdelvillar')}>LinkedIn↗</div>.
-
+			Versión Colombiana adaptada por  <div className="link" onClick={() => window.open('https://www.linkedin.com/in/santiaguf/')}>Santiago Bernal↗</div>. y <div className="link" onClick={() => window.open('https://www.linkedin.com/in/jasmin-eliana-osorio-osorio/')}>Eliana Osorio.↗</div>
+			el mapa de Colombia en formato SVG es cortesia de
 			<br></br>
 			<br></br>
 
