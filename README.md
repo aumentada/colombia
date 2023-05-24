@@ -1,16 +1,16 @@
-# Philippines Travel Level Map
+# Mapa de viajes de Colombia
 
-Mark the places you've visited and see which other more you wanna go to!
+Marca los lugares que has visitado y mira cuales otros más quieres visitar!
 
-[Demo](https://my-philippines-travel-level.com/map)
+[Demo](https://aumentada.github.io/colombia)
 
 | Level | Description |
 | ----- | ----------- |
-| 0 | Never been there |
-| 1 | Passed here |
-| 2 | Alighted here |
-| 3 | Visited here |
-| 4 | Stayed there |
-| 5 | Lived there |
+| 0 | Nunca estuve ahí |
+| 1 | Pasé por ahí |
+| 2 | Aterrice ahí |
+| 3 | Visité ahí |
+| 4 | Me quede ahí |
+| 5 | Viví ahí |
 
-![phMap](https://user-images.githubusercontent.com/8638243/232649713-3ca6430d-2163-477c-aa05-bd79a530fafd.jpg)
+![phMap](./public/social-preview.jpg)
