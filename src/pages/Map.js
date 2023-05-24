@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useEffect, useCallback, useContext } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 
-import PhilippinesMapJSX from '../PhilippinesMapJSX';
+import ColombiaMapJSX from '../ColombiaMapJSX';
 import { PROVINCES, MENU_OPTIONS } from '../utils/constants';
 import '.././App.css';
 import {
@@ -11,7 +11,7 @@ import {
 
 import AppContext from '../context/app.context';
 
-const PhilippinesMap = () => {
+const ColombiaMap = () => {
 	const navigate = useNavigate();
 	const [searchParams] = useSearchParams();
 
@@ -76,7 +76,7 @@ const PhilippinesMap = () => {
 
 	return (
 		<div className="Map">
-			<PhilippinesMapJSX
+			<ColombiaMapJSX
 				provinceLevels={provinceLevels}
 				setSelectedProvinceIndex={setSelectedProvinceIndex}
 				setMenuPosition={setMenuPosition}
@@ -111,4 +111,4 @@ const PhilippinesMap = () => {
 	);
 };
 
-export default PhilippinesMap;
+export default ColombiaMap;

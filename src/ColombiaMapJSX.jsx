@@ -13,7 +13,7 @@ const MapTooltip = ({ visible, position, content }) => {
 	return <span style={tooltipStyle} className="map-tooltip">{content}</span>;
 };
 
-const PhilippinesMapJSX = ({
+const ColombiaMapJSX = ({
 	provinceLevels,
 	setSelectedProvinceIndex,
 	setMenuPosition,
@@ -546,4 +546,4 @@ const PhilippinesMapJSX = ({
 	);
 };
 
-export default PhilippinesMapJSX;
+export default ColombiaMapJSX;
