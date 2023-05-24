@@ -52,7 +52,6 @@ function MapPage () {
 
 	return (
 		<section>
-			<div id='ezoic-pub-ad-placeholder-105'> </div>
 			<section className='Map-container'>
 				<section className='Map-padding' ref={divRef}>
 					<Map/>
@@ -60,13 +59,13 @@ function MapPage () {
 
 				<section className='Map-cta'>
 					<section className='Map-cta-button-container'>
-						<button className='save-image-button' onClick={downloadJpg}>Save Image</button>
-						<button className='reset-button' onClick={handleReset} disabled={noProvinceSelected}>Reset</button>
+						<button className='save-image-button' onClick={downloadJpg}>Guardar Imagen</button>
+						<button className='reset-button' onClick={handleReset} disabled={noProvinceSelected}>Resetear</button>
 					</section>
 
 					<button className='share-fb-button' onClick={handleFacebookShare}>
 						<FacebookLogo />
-                    Share
+                    Compartir
 					</button>
 				</section>
 			</section>
@@ -89,15 +88,11 @@ function MapPage () {
 				<br></br>
 
 			</section>
-			<div id='ezoic-pub-ad-placeholder-103'> </div>
-			{/*<AdsComponent dataAdSlot='8658257981' /> */}
-			<div className='flag-counter'>
-				<a  href='https://info.flagcounter.com/s6dX'>
-					<img src='https://s11.flagcounter.com/count2/s6dX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_4/maxflags_16/viewers_3/labels_0/pageviews_1/flags_0/percent_0/' alt='Flag Counter' border='0'/>
-				</a>
+			<div className="flag-counter">
+				<a href="https://info.flagcounter.com/RH4U"><img src="https://s01.flagcounter.com/count2/RH4U/bg_FFFFFF/txt_000000/border_CCCCCC/columns_4/maxflags_12/viewers_Visitantes/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0" /></a>
 			</div>
 
-			{isResetMapToastVisible && <div className='Map-cta-toast'>Map has been reset</div>}
+			{isResetMapToastVisible && <div className='Map-cta-toast'>El Mapa ha sido reseteado</div>}
 		</section>
 	);
 }

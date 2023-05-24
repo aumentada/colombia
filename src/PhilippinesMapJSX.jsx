@@ -387,7 +387,7 @@ const PhilippinesMapJSX = ({
 							strokeWidth="0.75"
 							fontSize="16"
 						>
-              Stayed there
+              Me quede ahí
 						</tspan>
 					</text>
 					<text
@@ -412,7 +412,7 @@ const PhilippinesMapJSX = ({
 							strokeWidth="0.75"
 							fontSize="16"
 						>
-              Lived there
+              Viví ahí
 						</tspan>
 					</text>
 					<text
@@ -437,7 +437,7 @@ const PhilippinesMapJSX = ({
 							strokeWidth="0.75"
 							fontSize="16"
 						>
-              Visited there
+              Visité ahí
 						</tspan>
 					</text>
 					<text
@@ -462,7 +462,7 @@ const PhilippinesMapJSX = ({
 							strokeWidth="0.75"
 							fontSize="16"
 						>
-              Alighted there
+              Aterrice ahí
 						</tspan>
 					</text>
 					<text
@@ -487,7 +487,7 @@ const PhilippinesMapJSX = ({
 							strokeWidth="0.75"
 							fontSize="16"
 						>
-              Passed there
+              Pasé por ahí
 						</tspan>
 					</text>
 					<text
@@ -512,7 +512,7 @@ const PhilippinesMapJSX = ({
 							strokeWidth="0.75"
 							fontSize="16"
 						>
-              Never been there
+              Nunca estuve ahí
 						</tspan>
 					</text>
 					<text
@@ -537,7 +537,7 @@ const PhilippinesMapJSX = ({
 							strokeWidth="0.462"
 							textAnchor="middle"
 						>
-              Philippines Level {totalLevel}
+              Nivel Colombia {totalLevel}
 						</tspan>
 					</text>
 				</g>

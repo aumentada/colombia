@@ -8,12 +8,12 @@ const PROVINCE_LEVEL_FILLS = [
 ];
 
 const MENU_OPTIONS = [
-	{ label: 'Lived there', level: 5, fill: '#e84c3d' },
-	{ label: 'Stayed there', level: 4, fill: '#d58337' },
-	{ label: 'Visited there', level: 3, fill: '#f3c218' },
-	{ label: 'Alighted there', level: 2, fill: '#30cc70' },
-	{ label: 'Passed there', level: 1, fill: '#3598db' },
-	{ label: 'Never been there', level: 0, fill: 'white' },
+	{ label: 'Viví ahí', level: 5, fill: '#e84c3d' },
+	{ label: 'Me quede ahí', level: 4, fill: '#d58337' },
+	{ label: 'Visité ahí', level: 3, fill: '#f3c218' },
+	{ label: 'Aterrice ahí', level: 2, fill: '#30cc70' },
+	{ label: 'Pasé por ahí', level: 1, fill: '#3598db' },
+	{ label: 'Nunca estuve ahí', level: 0, fill: 'white' },
 ];
 
 // The order of this array is strictly important as it's used in encoding/decoding URL

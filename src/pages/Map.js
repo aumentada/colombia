@@ -30,9 +30,9 @@ const PhilippinesMap = () => {
 	}, [provinceLevels]);
 
 	const searchUrl =
-    'http://www.google.com/search?q="' +
+    'https://www.google.com/search?q="' +
     selectedProvinceName +
-    ', Philippines"';
+    ', Colombia"';
 
 	useEffect(() => {
 		const levelStrFromURL = searchParams.get('levels');
