@@ -19,7 +19,7 @@ function MapPage () {
   
 	const noProvinceSelected = provinceLevels.every(level => level === 0);
 
-	const fileName = 'phMap.jpg';
+	const fileName = 'colMap.jpg';
   
 	const downloadJpg = useCallback(() => {
 		if (divRef.current === null) {

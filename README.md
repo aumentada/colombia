@@ -13,4 +13,4 @@ Marca los lugares que has visitado y mira cuales otros más quieres visitar!
 | 4 | Me quede ahí |
 | 5 | Viví ahí |
 
-![phMap](./public/social-preview.jpg)
+![ColMap](./public/social-preview.jpg)
