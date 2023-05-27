@@ -2,6 +2,7 @@
   "name": "colombia-map-app",
   "version": "0.2.2",
   "private": true,
+  "homepage": "https://aumentada.github.io/colombia",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
@@ -19,6 +20,8 @@
     "workbox-strategies": "^6.6.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
