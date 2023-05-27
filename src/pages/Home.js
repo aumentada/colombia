@@ -20,12 +20,14 @@ const Home = () => {
 			<br></br>
 			<br></br>
 
-			<li className="bullet"><b>Viví ahí</b> - pasaste una parte significativa de tu vida en ese departamento.</li>
-			<li className="bullet"><b>Me quede ahí</b> - pasaste al menos una noche en ese departamento.</li>
-			<li className="bullet"><b>Visité ahí</b> - pasaste algunas horas explorando el departamento.</li>
-			<li className="bullet"><b>Aterrice ahí</b> - solo hiciste escala en ese departamento.</li>
-			<li className="bullet"><b>Pasé por ahí</b> - pasaste por ese departamento pero no te detuviste.</li>
-			<li className="bullet"><b>Nunca estuve ahí</b> - no has estado en ese departamento, deberías ir pronto.</li>
+			<ul>
+				<li className="bullet"><b>Viví ahí</b> - pasaste una parte significativa de tu vida en ese departamento.</li>
+				<li className="bullet"><b>Me quede ahí</b> - pasaste al menos una noche en ese departamento.</li>
+				<li className="bullet"><b>Visité ahí</b> - pasaste algunas horas explorando el departamento.</li>
+				<li className="bullet"><b>Aterrice ahí</b> - solo hiciste escala en ese departamento.</li>
+				<li className="bullet"><b>Pasé por ahí</b> - pasaste por ese departamento pero no te detuviste.</li>
+				<li className="bullet"><b>Nunca estuve ahí</b> - no has estado en ese departamento, deberías ir pronto.</li>
+			</ul>
 
 			<br></br>
 			Tu puntaje total se actualizará de acuerdo a tus respuestas. Puedes guardar la imagen y compartirla en tus redes sociales.
