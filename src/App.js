@@ -12,8 +12,8 @@ function App () {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Layout />}>
-						<Route index element={<Home />} />
-						<Route path="map" element = {<MapPage />} />
+						<Route index path="/home" element={<Home />} />
+						<Route index element = {<MapPage />} />
 						<Route path="*" element={<NoPage />} />
 					</Route>
 				</Routes>

@@ -51,7 +51,7 @@ const ColombiaMap = () => {
 
 	useEffect(() => {
 		const levelStr = levelArrayToString(provinceLevels);
-		navigate(`/map?levels=${levelStr}`);
+		navigate(`/?levels=${levelStr}`);
 	}, [provinceLevels]);
 
 	const handleLevelClick = useCallback(
