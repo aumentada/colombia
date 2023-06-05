@@ -2,7 +2,7 @@
 
 Marca los lugares que has visitado y mira cuales otros más quieres visitar!
 
-[Demo](https://aumentada.github.io/colombia)
+[Demo](https://colombia.aumentada.net/)
 
 | Level | Description |
 | ----- | ----------- |

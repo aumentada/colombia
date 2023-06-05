@@ -163,7 +163,7 @@ svg#svg574 .province-layer path:hover {
   background-color: lightgray;
 }
 
-.save-image-button, .reset-button, .share-fb-button {
+.save-image-button, .reset-button, .share-fb-button, .share-tw-button, .share-wa-button {
   position: relative;
   background-color: white;
   border-radius: 10px;
@@ -176,6 +176,7 @@ svg#svg574 .province-layer path:hover {
   width: 100px;
   justify-content: center;
   padding: 3px;
+  margin-bottom: 20px;
 }
 
 .save-image-button:hover, .reset-button:hover {
@@ -189,8 +190,7 @@ svg#svg574 .province-layer path:hover {
 
 .share-fb-button {
   color: white;
-  background: #4267b3;
-  margin-bottom: 20px;
+  background: #597c92;
 }
 
 .share-fb-button:hover {
@@ -199,6 +199,34 @@ svg#svg574 .province-layer path:hover {
 }
 
 .share-fb-button svg {
+  margin-right: 4px;
+}
+
+.share-tw-button {
+  color: white;
+  background: #597c92;
+}
+
+.share-tw-button:hover {
+  cursor: pointer;
+  background-color: #0c85d0;
+}
+
+.share-tw-button svg {
+  margin-right: 4px;
+}
+
+.share-wa-button {
+  color: white;
+  background: #597c92;
+}
+
+.share-wa-button:hover {
+  cursor: pointer;
+  background-color: #1da851;
+}
+
+.share-wa-button svg {
   margin-right: 4px;
 }
 

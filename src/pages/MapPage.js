@@ -1,26 +1,27 @@
 import React, { useState, useCallback, useRef, useContext } from 'react';
-import { useLocation } from 'react-router-dom';
 import { toJpeg } from 'html-to-image';
 
 import Map from './Map';
 import FacebookLogo from '../components/FacebookLogo';
-import { FB_SHARE_URL } from '../utils/constants';
+import TwitterLogo from '../components/TwitterLogo';
+import WhatsAppLogo from '../components/WhatsAppLogo';
+
+import { FB_SHARE_URL, TWITTER_SHARE_URL, WHATSAPP_SHARE_URL } from '../utils/constants';
 import '.././App.css';
 
 import AppContext from '../context/app.context';
 
 function MapPage () {
 	const divRef = useRef(null);
-	const location = useLocation();
 
 	const [isResetMapToastVisible, setIsResetMapToastVisible] = useState(false);
 
 	const { provinceLevels, setProvinceLevels } = useContext(AppContext);
-  
+
 	const noProvinceSelected = provinceLevels.every(level => level === 0);
 
 	const fileName = 'colMap.jpg';
-  
+
 	const downloadJpg = useCallback(() => {
 		if (divRef.current === null) {
 			return;
@@ -40,8 +41,18 @@ function MapPage () {
 	const handleFacebookShare = useCallback(() => {
 		const navUrl = FB_SHARE_URL + window.location.href;
 		window.open(navUrl, 'mywindow', 'width=350,height=250');
-	}, [location.search]);
-    
+	}, []);
+
+	const handleTwitterShare = useCallback(() => {
+		const navUrl = TWITTER_SHARE_URL + window.location.href;
+		window.open(navUrl, 'mywindow', 'width=350,height=250');
+	}, []);
+
+	const handleWhatsAppShare = useCallback(() => {
+		const navUrl = WHATSAPP_SHARE_URL + window.location.href;
+		window.open(navUrl, 'mywindow', 'width=350,height=250');
+	}, []);
+
 	const handleReset = () => {
 		if (noProvinceSelected) {return;}
 
@@ -63,10 +74,20 @@ function MapPage () {
 						<button className='reset-button' onClick={handleReset} disabled={noProvinceSelected}>Resetear</button>
 					</section>
 
+					<br></br>
+
 					<button className='share-fb-button' onClick={handleFacebookShare}>
-						<FacebookLogo />
-                    Compartir
+						<FacebookLogo /> Compartir
 					</button>
+
+					<button className='share-tw-button' onClick={handleTwitterShare}>
+						<TwitterLogo /> Compartir
+					</button>
+
+					<button className='share-wa-button' onClick={handleWhatsAppShare}>
+						<WhatsAppLogo /> Compartir
+					</button>
+
 				</section>
 			</section>
 
@@ -113,9 +134,11 @@ function MapPage () {
 				<br></br>
 
 				Versión Colombiana adaptada por  <div className="link" onClick={() => window.open('https://www.linkedin.com/in/santiaguf/')}>Santiago Bernal↗</div>. y <div className="link" onClick={() => window.open('https://www.linkedin.com/in/jasmin-eliana-osorio-osorio/')}>Eliana Osorio.↗</div>
-				el mapa de Colombia en formato SVG es cortesia de
+				el mapa de Colombia en formato SVG es cortesia de <div className="link" onClick={() => window.open('https://simplemaps.com/resources/svg-co')}>SimpleMaps↗</div>.
 				<br></br>
 				<br></br>
+
+				Los iconos son cortesia de <div className="link" onClick={() => window.open('https://icons8.com')}>Icons8↗</div>.
 
 				<div className="flag-counter">
 					<a href="https://info.flagcounter.com/RH4U"><img src="https://s01.flagcounter.com/count2/RH4U/bg_FFFFFF/txt_000000/border_CCCCCC/columns_4/maxflags_12/viewers_Visitantes/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0" /></a>

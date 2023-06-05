@@ -49,7 +49,7 @@ const Home = () => {
 			<br></br>
 
 			Versión Colombiana adaptada por  <div className="link" onClick={() => window.open('https://www.linkedin.com/in/santiaguf/')}>Santiago Bernal↗</div>. y <div className="link" onClick={() => window.open('https://www.linkedin.com/in/jasmin-eliana-osorio-osorio/')}>Eliana Osorio.↗</div>
-			el mapa de Colombia en formato SVG es cortesia de
+			el mapa de Colombia en formato SVG es cortesia de <div className="link" onClick={() => window.open('https://simplemaps.com/resources/svg-co')}>SimpleMaps↗</div>.
 			<br></br>
 			<br></br>
 
