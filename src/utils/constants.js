@@ -223,4 +223,8 @@ const PROVINCES_LENGTH = PROVINCES.length;
 
 const FB_SHARE_URL = 'https://www.facebook.com/sharer/sharer.php?u=';
 
-export { PROVINCES, PROVINCE_LEVEL_FILLS, PROVINCES_LENGTH, MENU_OPTIONS, FB_SHARE_URL };
+const TWITTER_SHARE_URL = 'https://twitter.com/share?url=';
+
+const WHATSAPP_SHARE_URL = 'https://api.whatsapp.com/send?text=';
+
+export { PROVINCES, PROVINCE_LEVEL_FILLS, PROVINCES_LENGTH, MENU_OPTIONS, FB_SHARE_URL, TWITTER_SHARE_URL, WHATSAPP_SHARE_URL };
